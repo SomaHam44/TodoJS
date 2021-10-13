@@ -1,7 +1,7 @@
 
 function kattintas() {
     
-    document.getElementById("beviteliMezo").innerHTML = "";
+    
 
     let mezo = document.getElementById("beviteliMezo").value;
     let lista = document.createElement("ul");
@@ -19,6 +19,8 @@ function kattintas() {
 
 function init() {
     document.getElementById("listakeszitoGomb").addEventListener("click", kattintas);
+    document.getElementById("listakeszitoGomb").addEventListener("click", ()=>
+    {document.getElementById("beviteliMezo").value = " ";});
     
 }
 document.addEventListener("DOMContentLoaded", init);
